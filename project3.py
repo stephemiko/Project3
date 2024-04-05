@@ -25,8 +25,7 @@ def register_user(request_body):
         # Hash the password using Argon2
         hashed_password = hash_password(password)
 
-        # Store user details and hashed password (replace with your database logic)
-        # ...
+        
 
         # Return the password to the user
         response_data = {"password": password}
@@ -40,4 +39,4 @@ request_body = {
     "email": "$MyCoolEmail"
 }
 response, status_code = register_user(request_body)
-print(response)  # Replace with your API response handling
+print(response)  
